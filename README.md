@@ -148,16 +148,20 @@ pub enum WriteType {
 
 _Current Write Instructions_
 
-```rust
-pub fn create_memory_account_v1<'info>(..., memory_idx) -> Result<()> {
-   // Create a memory account which can then be used to write data to.
+pub enum Assertion {
+    // Define variants for different types of assertions
+}
+
+pub struct MemoryAccount {
+    // Define fields to represent a memory account
+}
+
+pub struct TransactionPayload {
+    // Define fields to represent a transaction payload containing assertion instructions
 }
 
 
-pub fn write_v1<'info>(..., memory_idx, write_type) -> Result<()> {
-   // Write data to a memory account using predefined write types.
-}
-```
+
 
 ## Getting Started
 
